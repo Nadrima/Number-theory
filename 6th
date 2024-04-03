@@ -1,0 +1,17 @@
+given an array of n integers are present in even count excet one.Find that one integer that has one count in O(N) time complexity and O(1) space complexity.
+note:a^a=0
+     a^0=a
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    int ans=0;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+        ans^=arr[i];
+    }
+    cout<<ans<<endl;
+}
